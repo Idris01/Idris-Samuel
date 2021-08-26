@@ -1,0 +1,19 @@
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen  and(max-width:600px){
+#header{
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+    
+}
