@@ -7,13 +7,40 @@
 
 #header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-@media only screen  and(max-width:600px){
+#header-img{
+    width:50%;
+}
+
+#nav-bar ul{
+    width:100%;
+    list-style: none;
+    text-transform: capitalize;
+    font-family:cursive;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items: center;
+}
+#nav-bar ul li{
+    display: inline-block;
+}
+.nav-link{
+    text-decoration: none;
+    padding:0.5em;
+    color:black;
+}
+
+
+@media only screen  and(max-width:500px){
 #header{
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+}
+#header-img{
+    width:100%;
 }
     
 }
